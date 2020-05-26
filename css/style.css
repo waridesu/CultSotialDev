@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Mariupol';
+    src: local('Mariupol Medium'), local('Mariupol-Medium'),
+        url('../font/Mariupol-Medium.woff') format('woff'),
+        url('../font/Mariupol-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-navigation {
+    display: flex;
+    background-color: #03257e;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+
+.main-navigation li {
+    list-style: none;
+    padding: 30px 10px;
+    border-right: 2px solid white;
+}
+
+.main-navigation li:first-child {
+    padding: 20px 10px;
+    border-left: 2px solid white;
+}
+
+.main-navigation li:last-child {
+    padding: 20px 0;
+    flex-grow: 1;
+    flex-basis: 100%;
+    position: relative;
+}
+
+.main-navigation li:last-child img {
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+
+}
+
+.main-navigation a {
+    font-family: 'Mariupol', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-navigation input {
+    width: 94%;
+    margin: 0 10px;
+    height: 30px;
+    padding-left: 35px;
+    border: none;
+}
+
+.main-logo {
+    display: flex;
+    width: 170px;
+
+}
+
+.main-logo::before {
+    display: block;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background-image: url('../img/logo.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding-right: 19px;
+}
