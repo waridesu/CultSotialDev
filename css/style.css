@@ -229,8 +229,8 @@ header {
     padding: 0;
     padding-top: 120px;
 }
-.foundation li:nth-child(even),
-.media li:nth-child(even){
+.foundation li:nth-child(2n),
+.media li:nth-child(2n){
     background-position: right;
 }
 .foundation a {
