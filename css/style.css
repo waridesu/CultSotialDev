@@ -1,11 +1,29 @@
 @font-face {
-    font-family: 'Mariupol';
+    font-family: 'Mariupol-Medium';
     src: local('Mariupol Medium'), local('Mariupol-Medium'),
-        url('../font/Mariupol-Medium.woff') format('woff'),
-        url('../font/Mariupol-Medium.otf') format('opentype');
-    font-weight: 500;
+    url('../font/Mariupol-Medium.woff') format('woff'),
+    url('../font/Mariupol-Medium.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: 'Mariupol-Bold';
+    src: local('Mariupol Bold'), local('Mariupol-Bold'),
+    url('../font/Mariupol-Bold.woff') format('woff'),
+    url('../font/Mariupol-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol-Regular';
+    src: local('Mariupol Regular'), local('Mariupol-Regular'),
+    url('../font/Mariupol-Regular.woff') format('woff'),
+    url('../font/Mariupol-Regular.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
 
 body {
     padding: 0;
@@ -35,13 +53,13 @@ header {
     border-left: 2px solid white;
 }
 
-
 .main-navigation a {
-    font-family: 'Mariupol', sans-serif;
+    font-family: 'Mariupol-Medium', sans-serif;
     font-size: 18px;
     text-decoration: none;
     color: #fff;
 }
+
 .search {
     position: relative;
     background-color: #03257e;
@@ -49,12 +67,13 @@ header {
     flex-grow: 1;
     border-right: 2px solid white;
 }
+
 .search img {
     position: absolute;
     top: 22px;
-    width: 38px;
-    height: 38px;
-    
+    left: 22px;
+    width: 36px;
+    height: 36px;
 }
 
 .search input {
@@ -65,10 +84,10 @@ header {
     box-sizing: border-box;
 }
 
-
 .main-logo {
     display: flex;
     width: 170px;
+    overflow: hidden;
 }
 
 .main-logo::before {
@@ -81,11 +100,171 @@ header {
     background-repeat: no-repeat;
     padding-right: 19px;
 }
+
+.intro {
+    background-image: url('../img/intro.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+.intro h1 {
+    font-family: 'Mariupol-Bold', sans-serif;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 200px;
+}
+.intro button {
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+}
+.news,
+.foundation,
+.media {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.news h2,
+.foundation h2,
+.afiche h2 {
+    color: #03257e;
+    text-decoration: underline;
+}
+.news ul,
+.foundation ul,
+.media ul,
+.afiche ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+}
+
+.news li,
+.foundation li,
+.media li,
+.afiche li {
+    position: relative;
+    list-style: none;
+    width: 24%;
+    min-width: 200px;
+    background-color: #03257e;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 1.5%;
+}
+.news .date {
+    position: absolute;
+    z-index: 2;
+    right: -2%;
+    bottom: -5%;
+    background-color: #00cfb4;
+}
+
+.news img,
+.afiche img {
+    display: block;
+    width: 100%;
+}
+
+.news p {
+    text-align: justify;
+    font-family: 'Mariupol-Regular', sans-serif;
+    text-indent: 4%;
+    margin: 0;
+    padding: 2% 4%;
+}
+
+.news button,
+.foundation button,
+.media button,
+.afiche button {
+    background-color: #fedb00;
+}
+
+.afiche {
+    text-align: center;
+    position: relative;
+    padding: 0 25px;
+}
+.afiche .left,
+.afiche .right {
+    position: absolute;
+    top: 25%;
+    height: 56%;
+    background-color: #03257e;
+    color: #fff;
+}
+
+.left {
+    left: 0.2%;
+}
+
+.right {
+    right: 0.2%;
+}
+
+.foundation,
+.media {
+    background-color: #7be7ff;
+}
+
+.foundation li,
+.media li {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 70px 0;
+    background-image: url('../img/intro.jpg');
+    background-size: cover;
+    background-position: left;
+}
+.media li {
+    padding: 0;
+    padding-top: 120px;
+}
+.foundation li:nth-child(even),
+.media li:nth-child(even){
+    background-position: right;
+}
+.foundation a {
+    display: block;
+    font-family: 'Mariupol-Bold', sans-serif;
+    color: #fedb00;
+    text-decoration: none;
+    margin: auto 0;    
+}
+
+.media p {
+    color: #fedb00;
+    font-family: 'Mariupol-Regular', sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+footer {
+    font-family: 'Mariupol-Bold', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #03257e;
+    color: #fff;
+}
+.afiche li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 @media (max-width: 1000px) {
     .main-navigation {
         flex-direction: column;
     }
-    .main-navigation li {
-        background-color: #03257e;
+    .main-navigation li:not(.main-logo) {
+        display: none;
     }
 }
