@@ -152,7 +152,7 @@ header {
 .afiche li {
     position: relative;
     list-style: none;
-    width: 24%;
+    width: 310px;
     min-width: 200px;
     background-color: #03257e;
     color: #fff;
@@ -162,13 +162,12 @@ header {
 .news .date {
     position: absolute;
     z-index: 2;
-    right: -2%;
-    bottom: -5%;
+    right: -5px;
+    bottom: -10px;
     background-color: #00cfb4;
 }
 
-.news img,
-.afiche img {
+.news img {
     display: block;
     width: 100%;
 }
@@ -192,22 +191,6 @@ header {
     text-align: center;
     position: relative;
     padding: 0 25px;
-}
-.afiche .left,
-.afiche .right {
-    position: absolute;
-    top: 25%;
-    height: 56%;
-    background-color: #03257e;
-    color: #fff;
-}
-
-.left {
-    left: 0.2%;
-}
-
-.right {
-    right: 0.2%;
 }
 
 .foundation,
@@ -255,16 +238,43 @@ footer {
     background-color: #03257e;
     color: #fff;
 }
+
 .afiche li {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
+.gal-conteiner {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.img-conteiner {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
+}
+
+.img-conteiner img {
+    width: 24%;
+}
+
 @media (max-width: 1000px) {
     .main-navigation {
         flex-direction: column;
     }
     .main-navigation li:not(.main-logo) {
         display: none;
+    }
+    .news,
+    .foundation,
+    .media,
+    .afiche {
+        padding: 0;
+    }
+    .img-conteiner img {
+        width: 100%;
     }
 }
