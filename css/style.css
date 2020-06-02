@@ -96,6 +96,7 @@ header {
 }
 
 .intro {
+    background-color: #03257e;
     background-image: url('../img/intro.jpg');
     background-position: center;
     background-size: cover;
