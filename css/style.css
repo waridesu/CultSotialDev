@@ -261,40 +261,46 @@ footer {
 .slider-conteiner .slider img {
     position: relative;
     left: 0;
-    width: calc(25% - 4px);
+    width: calc(33.33% - 4px);
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
-    animation: 20s slider infinite;
+    animation: slider 20s infinite;
 }
 @keyframes slider{
     0%{
         left: 0;
     }
-    10%{
-        left: -25%;
+    5%{
+        left: -33.33%;
     }
-    20% {
-        left: -25%;
+    15% {
+        left: -33.33%;
     }
-    30% {
-        left: -50%;
+    25% {
+        left: -66.66%;
     }
-    40% {
-        left: -50%;
+    35% {
+        left: -66.66%;
     }
-    50% {
-        left: -75%;
+    45% {
+        left: -99.99%;
     }
-    60% {
-        left: -75%;
+    55% {
+        left: -99.99%;
     }
-    70% {
-        left: -100%;
+    65% {
+        left: -133.32%;
     }
-    80% {
-        left: -100%;
+    75% {
+        left: -133.32%;
     }
-    99% {
+    85% {
+        left: -166.65%;
+    }
+    95% {
+        left: -166.65%;
+    }
+    100% {
         left: 0;
     }
 }
