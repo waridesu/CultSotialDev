@@ -1,26 +1,20 @@
 @font-face {
     font-family: 'Mariupol-Medium';
-    src: local('Mariupol Medium'), local('Mariupol-Medium'),
-    url('../font/Mariupol-Medium.woff') format('woff'),
-    url('../font/Mariupol-Medium.otf') format('opentype');
+    src: local('Mariupol Medium'), local('Mariupol-Medium'), url('../font/Mariupol-Medium.woff') format('woff'), url('../font/Mariupol-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Mariupol-Bold';
-    src: local('Mariupol Bold'), local('Mariupol-Bold'),
-    url('../font/Mariupol-Bold.woff') format('woff'),
-    url('../font/Mariupol-Bold.otf') format('opentype');
+    src: local('Mariupol Bold'), local('Mariupol-Bold'), url('../font/Mariupol-Bold.woff') format('woff'), url('../font/Mariupol-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Mariupol-Regular';
-    src: local('Mariupol Regular'), local('Mariupol-Regular'),
-    url('../font/Mariupol-Regular.woff') format('woff'),
-    url('../font/Mariupol-Regular.otf') format('opentype');
+    src: local('Mariupol Regular'), local('Mariupol-Regular'), url('../font/Mariupol-Regular.woff') format('woff'), url('../font/Mariupol-Regular.otf') format('opentype');
     font-weight: lighter;
     font-style: normal;
 }
@@ -109,12 +103,14 @@ header {
     padding-top: 150px;
     padding-bottom: 20px;
 }
+
 .intro h1 {
     font-family: 'Mariupol-Bold', sans-serif;
     color: #fff;
     margin: 0;
     margin-bottom: 200px;
 }
+
 .intro button {
     border: none;
     color: #fff;
@@ -122,23 +118,18 @@ header {
     font-size: 40px;
     font-weight: 900;
 }
-.news,
-.foundation,
-.media {
+
+.news, .foundation, .media {
     text-align: center;
     padding: 0 40px;
 }
 
-.news h2,
-.foundation h2,
-.afiche h2 {
+.news h2, .foundation h2, .afiche h2 {
     color: #03257e;
     text-decoration: underline;
 }
-.news ul,
-.foundation ul,
-.media ul,
-.afiche ul{
+
+.news ul, .foundation ul, .media ul, .afiche ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -146,10 +137,8 @@ header {
     padding: 0;
 }
 
-.news li,
-.foundation li,
-.media li,
-.afiche li {
+.news li, .foundation li, .media li, .afiche li {
+    display: block;
     position: relative;
     list-style: none;
     width: 24%;
@@ -157,35 +146,37 @@ header {
     background-color: #03257e;
     color: #fff;
     padding-bottom: 10px;
-    margin-bottom: 1.5%;
-}
-.news .date {
-    position: absolute;
-    z-index: 2;
-    right: -2%;
-    bottom: -5%;
-    background-color: #00cfb4;
-}
-
-.news img,
-.afiche img {
-    display: block;
-    width: 100%;
+    margin-bottom: 7px;
 }
 
 .news p {
     text-align: justify;
     font-family: 'Mariupol-Regular', sans-serif;
-    text-indent: 4%;
+    text-indent: 10px;
     margin: 0;
-    padding: 2% 4%;
+    padding: 5px 10px;
 }
 
-.news button,
-.foundation button,
-.media button,
-.afiche button {
+.news .date {
+    position: absolute;
+    text-indent: 0;
+    z-index: 2;
+    right: -4px;
+    bottom: -6px;
+    padding: 3px 5px;
+    background-color: #00cfb4;
+}
+
+.news img, .afiche img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.news button, .foundation button, .media button, .afiche button {
     background-color: #fedb00;
+    margin-bottom: 1.45em;
 }
 
 .afiche {
@@ -193,30 +184,17 @@ header {
     position: relative;
     padding: 0 25px;
 }
-.afiche .left,
-.afiche .right {
-    position: absolute;
-    top: 25%;
-    height: 56%;
-    background-color: #03257e;
-    color: #fff;
-}
 
-.left {
-    left: 0.2%;
-}
-
-.right {
-    right: 0.2%;
-}
-
-.foundation,
-.media {
+.foundation, .media {
     background-color: #7be7ff;
+    display: block;
 }
 
-.foundation li,
-.media li {
+.foundation h2, .media h2 {
+    margin-top: 0;
+    padding-top: 0.83em;
+}
+.foundation li, .media li {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -225,20 +203,23 @@ header {
     background-size: cover;
     background-position: left;
 }
+
 .media li {
     padding: 0;
     padding-top: 120px;
 }
-.foundation li:nth-child(2n),
-.media li:nth-child(2n){
+
+.foundation .n2,
+.media .n2 {
     background-position: right;
 }
+
 .foundation a {
     display: block;
     font-family: 'Mariupol-Bold', sans-serif;
     color: #fedb00;
     text-decoration: none;
-    margin: auto 0;    
+    margin: auto 0;
 }
 
 .media p {
@@ -255,16 +236,140 @@ footer {
     background-color: #03257e;
     color: #fff;
 }
-.afiche li {
+
+.slider-conteiner {
+    display: flex;
+    justify-content: center;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
+
 }
+
+.afiche button {
+    margin-top: 1.45em;
+}
+
+.slider-conteiner .left,
+.slider-conteiner .right {
+    padding: 0;
+    margin: 0;
+}
+
+.slider-conteiner .slider img {
+    position: relative;
+    left: 0;
+    width: calc(25% - 4px);
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: 20s slider infinite;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: -25%;
+    }
+    20% {
+        left: -25%;
+    }
+    30% {
+        left: -50%;
+    }
+    40% {
+        left: -50%;
+    }
+    50% {
+        left: -75%;
+    }
+    60% {
+        left: -75%;
+    }
+    70% {
+        left: -100%;
+    }
+    80% {
+        left: -100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
 @media (max-width: 1000px) {
     .main-navigation {
         flex-direction: column;
     }
     .main-navigation li:not(.main-logo) {
         display: none;
+    }
+    .news, .foundation, .media {
+        padding: 0;
+    }
+    .news li, .foundation li, .media li {
+        width: 95%;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-conteiner .slider img {
+        width: calc(100% - 4px);
+    }
+
+    @keyframes slider{
+        0%{
+            left: 0;
+        }
+        5%{
+            left: -100%;
+        }
+        10% {
+            left: -100%;
+        }
+        15% {
+            left: -200%;
+        }
+        20% {
+            left: -200%;
+        }
+        25% {
+            left: -300%;
+        }
+        30% {
+            left: -300%;
+        }
+        35% {
+            left: -400%;
+        }
+        40% {
+            left: -400%;
+        }
+        45% {
+            left: -500%;
+        }
+        50% {
+            left: -500%;
+        }
+        55% {
+            left: -600%;
+        }
+        60% {
+            left: -600%;
+        }
+        65% {
+            left: -700%;
+        }
+        70% {
+            left: -700%;
+        }
+        99% {
+            left: 0;
+        }
     }
 }
