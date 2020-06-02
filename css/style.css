@@ -201,7 +201,8 @@ header {
     padding: 70px 0;
     background-image: url('../img/intro.jpg');
     background-size: cover;
-    background-position: left;
+    background-position: center;
+    background-color: #03257e;
 }
 
 .media li {
@@ -209,10 +210,6 @@ header {
     padding-top: 120px;
 }
 
-.foundation .n2,
-.media .n2 {
-    background-position: right;
-}
 
 .foundation a {
     display: block;
