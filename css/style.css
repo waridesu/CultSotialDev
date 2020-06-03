@@ -112,6 +112,7 @@ header {
 }
 
 .intro h1 {
+    text-align: center;
     top: 20%;
     margin: 0;
     font-family: 'Mariupol-Bold', sans-serif;
