@@ -19,8 +19,8 @@
     font-style: normal;
 }
 
-body {
-    padding: 0;
+body, html {
+    height: 100%;
     margin: 0;
 }
 
@@ -97,21 +97,24 @@ header {
 
 .intro {
     position: relative;
-    height: 70vh;
     background-color: #03257e;
-    background-image: url('../img/intro.jpg');
+    background-image: url("../img/blue.png");
+    height: 100vh;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    padding-top: 150px;
-    padding-bottom: 20px;
+}
+
+.intro h1, .intro button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .intro h1 {
+    top: 20%;
     font-family: 'Mariupol-Bold', sans-serif;
     color: #fff;
-    margin: 0;
-    margin-bottom: 200px;
 }
 
 .intro button {
@@ -177,8 +180,6 @@ header {
     width: 100%;
 }
 
-
-
 .news button, .foundation button, .media button, .afiche button {
     background-color: #fedb00;
     margin-bottom: 1.45em;
@@ -198,6 +199,7 @@ header {
     margin-top: 0;
     padding-top: 0.83em;
 }
+
 .foundation li, .media li {
     display: flex;
     align-items: baseline;
@@ -213,7 +215,6 @@ header {
     padding: 0;
     padding-top: 120px;
 }
-
 
 .foundation a {
     display: block;
@@ -242,21 +243,20 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .slider {
     display: flex;
     overflow: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 .afiche button {
     margin-top: 1.45em;
 }
 
-.slider-conteiner .left,
-.slider-conteiner .right {
+.slider-conteiner .left, .slider-conteiner .right {
     padding: 0 6px;
     margin: 0;
 }
@@ -270,11 +270,12 @@ footer {
     border-right: 2px solid #fff;
     animation: slider 20s infinite;
 }
-@keyframes slider{
-    0%{
+
+@keyframes slider {
+    0% {
         left: 0;
     }
-    5%{
+    5% {
         left: -33.33%;
     }
     15% {
@@ -321,7 +322,6 @@ footer {
     }
     .news li, .foundation li, .media li {
         width: 95%;
-
     }
 }
 
@@ -330,12 +330,11 @@ footer {
         width: calc(100% - 4px);
         height: 30vh;
     }
-
-    @keyframes slider{
-        0%{
+    @keyframes slider {
+        0% {
             left: 0;
         }
-        5%{
+        5% {
             left: -100%;
         }
         10% {
