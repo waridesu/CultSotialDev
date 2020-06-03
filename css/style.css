@@ -99,7 +99,7 @@ header {
     position: relative;
     background-color: #03257e;
     background-image: url("../img/blue.png");
-    height: 100vh;
+    height: calc(100vh - 60px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
