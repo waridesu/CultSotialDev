@@ -96,6 +96,8 @@ header {
 }
 
 .intro {
+    position: relative;
+    height: 70vh;
     background-color: #03257e;
     background-image: url('../img/intro.jpg');
     background-position: center;
@@ -113,6 +115,8 @@ header {
 }
 
 .intro button {
+    position: absolute;
+    bottom: 5%;
     border: none;
     color: #fff;
     background-color: transparent;
@@ -182,8 +186,7 @@ header {
 
 .afiche {
     text-align: center;
-    position: relative;
-    padding: 0 25px;
+    padding: 0 5px;
 }
 
 .foundation, .media {
@@ -254,7 +257,7 @@ footer {
 
 .slider-conteiner .left,
 .slider-conteiner .right {
-    padding: 0;
+    padding: 0 6px;
     margin: 0;
 }
 
@@ -262,6 +265,7 @@ footer {
     position: relative;
     left: 0;
     width: calc(33.33% - 4px);
+    height: 27vh;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     animation: slider 20s infinite;
@@ -324,6 +328,7 @@ footer {
 @media (max-width: 500px) {
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
+        height: 30vh;
     }
 
     @keyframes slider{
