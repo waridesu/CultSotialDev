@@ -81,7 +81,7 @@ header {
 .main-logo {
     display: flex;
     width: 170px;
-    overflow: hidden;
+
 }
 
 .main-logo::before {
@@ -372,7 +372,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 765px) {
     .main-navigation,
     .news-container a {
         flex-direction: column;
@@ -380,9 +380,12 @@ footer {
     .news-container img {
         width: 100%;
     }
+
     .main-navigation li:not(.main-logo) {
-        display: none;
+        z-index: 1;
+        background-color: #03257e;
     }
+
     .news, .foundation, .media {
         padding: 0;
     }
