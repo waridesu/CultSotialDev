@@ -372,7 +372,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 900px) {
     .main-navigation,
     .news-container a {
         flex-direction: column;
@@ -398,6 +398,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+    .main-navigation li:not(.main-logo) {
+        display: none;
+    }
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
         height: 30vh;
