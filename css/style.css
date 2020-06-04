@@ -139,24 +139,58 @@ header {
     text-decoration: underline;
 }
 
-.news ul, .foundation ul, .media ul, .afiche ul {
+.news ul, .foundation ul, .media ul, .afiche ul,
+.news-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     padding: 0;
 }
-
-.news li, .foundation li, .media li, .afiche li {
-    display: block;
-    position: relative;
+.news li,
+.foundation li,
+.media li,
+.afiche li,
+.news-container li,
+.foundation-container li {
     list-style: none;
-    width: 24%;
-    min-width: 200px;
     background-color: #03257e;
     color: #fff;
-    padding-bottom: 10px;
+    display: block;
     margin-bottom: 7px;
+}
+
+.news li,
+.foundation li,
+.media li,
+.afiche li {
+    position: relative;
+    width: 24%;
+    min-width: 200px;
+    padding-bottom: 10px;
+
+}
+
+.news-container li {
+    width: 40%;
+}
+
+.news-container a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+.news-container img {
+    width: 40%;
+}
+.news-container div {
+    padding: 0 10px;
+}
+
+.news-container p {
+    text-align: justify;
+    text-indent: 5px;
 }
 
 .news p {
@@ -182,7 +216,10 @@ header {
     width: 100%;
 }
 
-.news button, .foundation button, .media button, .afiche button {
+.news button,
+.foundation button,
+.media button,
+.afiche button {
     background-color: #fedb00;
     margin-bottom: 1.45em;
 }
@@ -209,9 +246,14 @@ header {
     padding: 70px 0;
     background-image: url('../img/blue.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-color: #03257e;
 }
+
+.foundation li:nth-child(2n),
+ .media li:nth-child(2n) {
+    background-position: right;
+ }
 
 .media li {
     padding: 0;
@@ -311,10 +353,32 @@ footer {
         left: 0;
     }
 }
+.foundation-container {
+    width: 50%;
+}
+.fondation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.fondation-list li {
+    width: 45%;
+}
+
+.foundation-container img {
+    display: block;
+    width: 100%;
+}
 
 @media (max-width: 1000px) {
-    .main-navigation {
+    .main-navigation,
+    .news-container a {
         flex-direction: column;
+    }
+    .news-container img {
+        width: 100%;
     }
     .main-navigation li:not(.main-logo) {
         display: none;
@@ -322,7 +386,10 @@ footer {
     .news, .foundation, .media {
         padding: 0;
     }
-    .news li, .foundation li, .media li {
+    .news li,
+    .foundation li,
+    .media li,
+    .news-container li {
         width: 95%;
     }
 }
@@ -331,6 +398,12 @@ footer {
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
         height: 30vh;
+    }
+    .foundation-container {
+        width: 100%;
+    }
+    .fondation-list li {
+        width: 95%;
     }
     @keyframes slider {
         0% {
