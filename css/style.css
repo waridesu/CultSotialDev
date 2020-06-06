@@ -95,7 +95,7 @@ header {
     padding-right: 19px;
 }
 
-.intro {
+.index-intro {
     position: relative;
     background-color: #03257e;
     background-image: url("../img/blue.png");
@@ -105,13 +105,13 @@ header {
     background-size: cover;
 }
 
-.intro h1, .intro button {
+.index-intro h1, .index-intro button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.intro h1 {
+.index-intro h1 {
     text-align: center;
     top: 20%;
     margin: 0;
@@ -119,7 +119,7 @@ header {
     color: #fff;
 }
 
-.intro button {
+.index-intro button {
     position: absolute;
     bottom: 5%;
     border: none;
@@ -129,17 +129,17 @@ header {
     font-weight: 900;
 }
 
-.news, .foundation, .media {
+.index-news, .index-foundation, .index-media {
     text-align: center;
     padding: 0 40px;
 }
 
-.news h2, .foundation h2, .afiche h2 {
+.index-news h2, .index-foundation h2, .afiche h2 {
     color: #03257e;
     text-decoration: underline;
 }
 
-.news ul, .foundation ul, .media ul, .afiche ul,
+.index-news ul, .index-foundation ul, .index-media ul, .afiche ul,
 .news-container,
 .event,
 .media-container,
@@ -156,9 +156,9 @@ header {
     flex-shrink: 0;
 }
 
-.news li,
-.foundation li,
-.media li,
+.index-news li,
+.index-foundation li,
+.index-media li,
 .afiche li,
 .news-container li,
 .foundation-container li,
@@ -172,9 +172,9 @@ header {
     margin-bottom: 7px;
 }
 
-.news li,
-.foundation li,
-.media li,
+.index-news li,
+.index-foundation li,
+.index-media li,
 .afiche li,
 .book-container li {
     position: relative;
@@ -229,7 +229,7 @@ header {
     margin-left: 5px;
 }
 
-.news p {
+.index-news p {
     text-align: justify;
     font-family: 'Mariupol-Regular', sans-serif;
     text-indent: 10px;
@@ -237,7 +237,7 @@ header {
     padding: 5px 10px;
 }
 
-.news .date {
+.index-news .date {
     position: absolute;
     text-indent: 0;
     z-index: 2;
@@ -247,16 +247,16 @@ header {
     background-color: #00cfb4;
 }
 
-.news img,
+.index-news img,
 .afiche img,
 .event img {
     display: block;
     width: 100%;
 }
 
-.news button,
-.foundation button,
-.media button,
+.index-news button,
+.index-foundation button,
+.index-media button,
 .afiche button {
     background-color: #fedb00;
     margin-bottom: 1.45em;
@@ -267,17 +267,17 @@ header {
     padding: 0 5px;
 }
 
-.foundation, .media {
+.index-foundation, .index-media {
     background-color: #7be7ff;
     display: block;
 }
 
-.foundation h2, .media h2 {
+.index-foundation h2, .index-media h2 {
     margin-top: 0;
     padding-top: 0.83em;
 }
 
-.foundation li, .media li {
+.index-foundation li, .index-media li {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -288,17 +288,17 @@ header {
     background-color: #03257e;
 }
 
-.foundation li:nth-child(2n),
- .media li:nth-child(2n) {
+.index-foundation li:nth-child(2n),
+ .index-media li:nth-child(2n) {
     background-position: right;
  }
 
-.media li {
+.index-media li {
     padding: 0;
     padding-top: 120px;
 }
 
-.foundation a {
+.index-foundation a {
     display: block;
     font-family: 'Mariupol-Bold', sans-serif;
     color: #fedb00;
@@ -306,7 +306,7 @@ header {
     margin: auto 0;
 }
 
-.media p {
+.index-media p {
     color: #fedb00;
     font-family: 'Mariupol-Regular', sans-serif;
     text-align: justify;
@@ -347,7 +347,7 @@ footer {
     position: relative;
     left: 0;
     width: calc(33.33% - 4px);
-    height: 27vh;
+    height: 25vw;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     animation: slider 20s infinite;
@@ -433,16 +433,21 @@ footer {
         background-color: #03257e;
     }
 
-    .news, .foundation, .media {
+    .index-news, .index-foundation, .index-media {
         padding: 0;
     }
-    .news li,
-    .foundation li,
-    .media li,
-    .news-container li {
+    .index-news li,
+    .index-foundation li,
+    .index-media li,
+    .news-container li,
+    .media-container li {
         width: 95%;
     }
-    .news-container li,
+
+    .event li {
+        min-width: auto;
+    }
+    
     .book-container li {
         width: 47%;
     }
@@ -460,13 +465,18 @@ footer {
     }
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
-        height: 30vh;
+        height: 45vw;
     }
 
     .fondation-list li,
     .event li,
     .book-container li {
         width: 95%;
+    }
+
+    .news-container li,
+    .media-container li {
+        min-width: auto;
     }
     @keyframes slider {
         0% {
