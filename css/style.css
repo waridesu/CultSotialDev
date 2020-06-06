@@ -457,7 +457,8 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .news-container a {
+    .news-container a,
+    .media-container a {
         flex-direction: column;
     }
     .main-navigation li:not(.main-logo) {
