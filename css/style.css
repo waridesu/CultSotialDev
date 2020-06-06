@@ -188,6 +188,7 @@ header {
 .event li,
 .media-container li {
     width: 32%;
+    min-width: 420px;
 }
 .book-container li {
     padding: 5px 10px;
@@ -206,12 +207,15 @@ header {
     display: block;
 }
 
-.news-container img {
-    width: 100%;
-    min-width: 160px;
-}
-.news-container div {
+.news-container div,
+.media-container div {
     padding: 7px 10px;
+}
+
+.news-container img,
+.media-container img {
+    width: 100%;
+    min-width: 250px;
 }
 
 .news-container p {
