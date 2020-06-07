@@ -52,6 +52,7 @@ header {
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
 }
 
 .search {
@@ -81,7 +82,6 @@ header {
 .main-logo {
     display: flex;
     width: 170px;
-
 }
 
 .main-logo::before {
@@ -173,7 +173,6 @@ header {
 }
 
 .index-news li,
-.index-foundation li,
 .index-media li,
 .afiche li,
 .book-container li {
@@ -186,7 +185,8 @@ header {
 
 .news-container li,
 .event li,
-.media-container li {
+.media-container li,
+.index-foundation li {
     width: 32%;
     min-width: 420px;
 }
@@ -199,8 +199,15 @@ header {
 .fondation-list a,
 .media-container a{
     display: flex;
+    
+}
+.news-container a,
+.fondation-list a,
+.media-container a,
+.index-news a {
     color: #fff;
     text-decoration: none;
+
 }
 
 .fondation-list a {
