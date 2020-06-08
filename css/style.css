@@ -406,6 +406,7 @@ footer {
     }
     .main-navigation li:first-child {
         display: flex;
+        overflow: hidden;
     }
     .main-navigation.active li {
         display: flex;
