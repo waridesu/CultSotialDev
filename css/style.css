@@ -57,7 +57,7 @@ main {
 }
 
 .main-navigation li:first-child {
-    padding: 20px;
+    padding: 19px 20px;
 }
 
 .main-navigation a {
@@ -406,7 +406,6 @@ footer {
     }
     .main-navigation li:first-child {
         display: flex;
-        overflow: hidden;
     }
     .main-navigation.active li {
         display: flex;
