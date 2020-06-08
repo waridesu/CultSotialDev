@@ -25,6 +25,7 @@ html, body {
 }
 
 header {
+    height: 80px;
     display: flex;
     background-color: #03257e;
 }
