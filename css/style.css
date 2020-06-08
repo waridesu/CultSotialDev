@@ -19,7 +19,7 @@
     font-style: normal;
 }
 
-body, html {
+html, body {
     height: 100%;
     margin: 0;
 }
@@ -32,7 +32,6 @@ header {
 header svg {
     padding: 7px 0;
     padding-left: 5px;
-
 }
 
 .main-navigation {
@@ -40,6 +39,16 @@ header svg {
     margin: 0;
     padding: 0;
     height: 80px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .main-navigation li {
@@ -128,11 +137,7 @@ header svg {
     text-decoration: underline;
 }
 
-.index-news ul, .index-foundation ul, .index-media ul, .afiche ul,
-.news-container,
-.event,
-.media-container,
-.book-container {
+.index-news ul, .index-foundation ul, .index-media ul, .afiche ul, .news-container, .event, .media-container, .book-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -140,20 +145,11 @@ header svg {
     padding: 0;
 }
 
-.news-container,
-.media-container {
+.news-container, .media-container {
     flex-shrink: 0;
 }
 
-.index-news li,
-.index-foundation li,
-.index-media li,
-.afiche li,
-.news-container li,
-.foundation-container li,
-.event li,
-.media-container li,
-.book-container li {
+.index-news li, .index-foundation li, .index-media li, .afiche li, .news-container li, .foundation-container li, .event li, .media-container li, .book-container li {
     list-style: none;
     background-color: #03257e;
     color: #fff;
@@ -161,55 +157,42 @@ header svg {
     margin-bottom: 7px;
 }
 
-.index-news li,
-.index-media li,
-.afiche li,
-.book-container li {
+.index-news li, .index-media li, .afiche li, .book-container li {
     position: relative;
     width: 24%;
     min-width: 200px;
     padding-bottom: 10px;
-
 }
 
-.news-container li,
-.event li,
-.media-container li,
-.index-foundation li {
+.news-container li, .event li, .media-container li, .index-foundation li {
     width: 32%;
     min-width: 420px;
 }
+
 .book-container li {
     padding: 5px 10px;
     text-align: center;
     box-sizing: border-box;
 }
-.news-container a,
-.fondation-list a,
-.media-container a{
+
+.news-container a, .fondation-list a, .media-container a {
     display: flex;
-    
 }
-.news-container a,
-.fondation-list a,
-.media-container a,
-.index-news a {
+
+.news-container a, .fondation-list a, .media-container a, .index-news a {
     color: #fff;
     text-decoration: none;
-
 }
 
 .fondation-list a {
     display: block;
 }
 
-.news-container div,
-.media-container div {
+.news-container div, .media-container div {
     padding: 7px 10px;
 }
 
-.news-container img,
-.media-container img {
+.news-container img, .media-container img {
     width: 100%;
     min-width: 250px;
 }
@@ -243,17 +226,12 @@ header svg {
     background-color: #00cfb4;
 }
 
-.index-news img,
-.afiche img,
-.event img {
+.index-news img, .afiche img, .event img {
     display: block;
     width: 100%;
 }
 
-.index-news button,
-.index-foundation button,
-.index-media button,
-.afiche button {
+.index-news button, .index-foundation button, .index-media button, .afiche button {
     background-color: #fedb00;
     margin-bottom: 1.45em;
 }
@@ -284,10 +262,9 @@ header svg {
     background-color: #03257e;
 }
 
-.index-foundation li:nth-child(2n),
- .index-media li:nth-child(2n) {
+.index-foundation li:nth-child(2n), .index-media li:nth-child(2n) {
     background-position: right;
- }
+}
 
 .index-media li {
     padding: 0;
@@ -310,6 +287,7 @@ header svg {
 }
 
 footer {
+    margin-top: auto;
     font-family: 'Mariupol-Bold', sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -387,13 +365,15 @@ footer {
         left: 0;
     }
 }
+
 .foundation-container {
     display: flex;
 }
-.foundation-main,
-.foundation-map {
+
+.foundation-main, .foundation-map {
     width: 50%;
 }
+
 .fondation-list {
     display: flex;
     flex-wrap: wrap;
@@ -401,10 +381,10 @@ footer {
     padding: 0;
 }
 
-.fondation-list li,
-.event li {
+.fondation-list li, .event li {
     width: 45%;
 }
+
 .fondation-list div {
     padding: 0 10px;
 }
@@ -418,9 +398,8 @@ footer {
     width: 100%;
 }
 
-
 @media (max-width: 900px) {
-    header{
+    header {
         background-color: #03257e;
     }
     .main-navigation li {
@@ -441,9 +420,7 @@ footer {
         height: 40px;
         background-color: #03257e;
     }
-    .burger:before,
-    .burger:after,
-    .burger span {
+    .burger:before, .burger:after, .burger span {
         content: "";
         background-color: #fff;
         position: absolute;
@@ -473,32 +450,23 @@ footer {
     .main-navigation {
         flex-direction: column;
     }
-    .news-container img,
-    .media-container img {
+    .news-container img, .media-container img {
         width: 100%;
     }
-
     .main-navigation li:not(.main-logo) {
         z-index: 1;
         background-color: #03257e;
     }
-
     .index-news, .index-foundation, .index-media {
         padding: 0;
     }
-    .index-news li,
-    .index-foundation li,
-    .index-media li,
-    .news-container li,
-    .media-container li {
+    .index-news li, .index-foundation li, .index-media li, .news-container li, .media-container li {
         width: 95%;
         min-width: auto;
     }
-
     .event li {
         min-width: auto;
     }
-    
     .book-container li {
         width: 47%;
     }
@@ -511,12 +479,10 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .news-container a,
-    .media-container a {
+    .news-container a, .media-container a {
         flex-direction: column;
     }
-    .main-navigation li,
-    .main-navigation li:first-child {
+    .main-navigation li, .main-navigation li:first-child {
         display: none;
     }
     .main-navigation.active {
@@ -527,20 +493,14 @@ footer {
     .main-navigation.active li:first-child {
         display: flex;
     }
-
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
         height: 45vw;
     }
-
-    .fondation-list li,
-    .event li,
-    .book-container li {
+    .fondation-list li, .event li, .book-container li {
         width: 95%;
     }
-
-    .news-container li,
-    .media-container li {
+    .news-container li, .media-container li {
         min-width: auto;
     }
     @keyframes slider {
