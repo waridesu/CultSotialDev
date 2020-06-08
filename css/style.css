@@ -405,8 +405,8 @@ footer {
         display: none;
     }
     .main-navigation li:first-child {
-        display: flex;
-        line-height: 1.1;
+        display: block;
+        line-height: 1.12;
     }
     .main-navigation.active li {
         display: flex;
