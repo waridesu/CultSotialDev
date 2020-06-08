@@ -66,6 +66,7 @@ main {
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    display: block;
     white-space: nowrap;
 }
 
