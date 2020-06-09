@@ -31,11 +31,12 @@ header {
 }
 
 header svg {
-    padding: 8px 0;
+    padding: 7px 0;
     padding-left: 5px;
 }
 
 .main-navigation {
+    background-color: #03257e;
     display: flex;
     margin: 0;
     padding: 0;
@@ -93,34 +94,33 @@ main {
 }
 
 .index-intro {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     background-color: #03257e;
     background-image: url("../img/blue.png");
     height: calc(100vh - 80px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+    box-sizing: border-box;
+    color: #fff;
 }
 
-.index-intro h1, .index-intro button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .index-intro h1 {
-    text-align: center;
-    top: 20%;
     margin: 0;
     font-family: 'Mariupol-Bold', sans-serif;
-    color: #fff;
+
 }
 
 .index-intro button {
-    position: absolute;
-    bottom: 5%;
-    border: none;
     color: #fff;
+    border: none;
     background-color: transparent;
     font-size: 40px;
     font-weight: 900;
@@ -398,18 +398,14 @@ footer {
 }
 
 @media (max-width: 900px) {
-    header {
-        background-color: #03257e;
-    }
     .main-navigation li {
         display: none;
     }
     .main-navigation li:first-child {
         display: block;
-        line-height: 1.12;
     }
     .main-navigation.active li {
-        display: flex;
+        display: block;
     }
     .burger {
         position: relative;
