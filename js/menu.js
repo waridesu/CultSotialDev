@@ -1,6 +1,6 @@
 var menu = {
     btn: document.querySelector('.burger'),
-    nav: document.querySelector('.main-navigation'),
+    nav: document.querySelector('nav'),
     start: function () {
         let that = this;
         this.btn.addEventListener('click', function (e) {
