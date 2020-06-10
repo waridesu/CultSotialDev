@@ -37,6 +37,7 @@ header svg {
 
 .main-navigation {
     display: flex;
+    display: -webkit-flexbox;
     align-items: center;
     margin: 0;
     padding: 0;
