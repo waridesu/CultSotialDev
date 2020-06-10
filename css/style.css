@@ -420,6 +420,7 @@ footer {
     }
     nav.active {
         position: relative;
+        z-index: 3;
     }
     nav.active p {
         display: block;
