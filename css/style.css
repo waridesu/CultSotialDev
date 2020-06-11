@@ -52,7 +52,10 @@ header nav {
     vertical-align: top;
     margin: 0;
     padding: 20px 0;
-
+}
+.main-logo {
+    margin: 5px 0;
+    margin-left: 10px;
 }
 nav p {
     display: inline-block;
@@ -77,26 +80,29 @@ nav a {
     vertical-align: top;
     position: relative;
     background-color: #03257e;
-    padding: 20px;
+    padding: 20px 10px;
     height: 40px;
-    width:calc(100% - 941px);
+    width:calc(100% - 911px);
 
 }
 
 .search img {
     position: absolute;
-    top: 22px;
-    left: 22px;
-    width: 36px;
-    height: 36px;
+    top: 25px;
+    left: 11px;
+    width: 30px;
+    height: 30px;
 }
 
 .search input {
     width: 100%;
     height: 100%;
     border: none;
-    padding-left: 40px;
+    padding-left: 30px;
     box-sizing: border-box;
+}
+.search input::placeholder{
+   font-family: 'Mariupol-Medium', sans-serif;;
 }
 
 .index-intro {
@@ -139,7 +145,6 @@ nav a {
 
 .index-news h2, .index-foundation h2, .afiche h2 {
     color: #03257e;
-    text-decoration: underline;
 }
 
 .index-news ul, .index-foundation ul, .index-media ul, .afiche ul, .news-container, .event, .media-container, .book-container {
@@ -326,7 +331,7 @@ footer {
     position: relative;
     left: 0;
     width: calc(33.33% - 4px);
-    height: 25vw;
+    height: 50vw;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     animation: slider 20s infinite;
@@ -431,13 +436,13 @@ footer {
     }
 
     .search {
-        width: calc(100% - 431px);
+        width: calc(100% - 381px);
     }
 
     .burger {
         position: relative;
         top: 20px;
-        margin: 0 15px;
+        margin-left: 10px;
         display: inline-block;
         vertical-align: top;
         width: 40px;
@@ -515,11 +520,11 @@ footer {
         display: block;
     }
     .search {
-        width: calc(100% - 258px);
+        width: calc(100% - 208px);
     }
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
-        height: 45vw;
+        height: 100vw;
     }
     .fondation-list li, .event li, .book-container li {
         width: 95%;
