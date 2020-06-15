@@ -1,4 +1,4 @@
-var menu = {
+const menu = {
     btn: document.querySelector('.burger'),
     nav: document.querySelector('nav'),
     start: function () {
