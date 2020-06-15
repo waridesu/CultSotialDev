@@ -9,6 +9,9 @@ let counter = 0;
 
 
 let size = sliderImgs[0].width + 4;
+
+
+
 prevBtn.disabled = true;
 
 nextBtn.addEventListener('click', () => {
@@ -17,7 +20,7 @@ nextBtn.addEventListener('click', () => {
     slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
     prevBtn.disabled = false;
 
-    if (document.documentElement.clientWidth > 1200 && (counter >= sliderImgs.length - 3)) {
+    if (document.documentElement.clientWidth > 530 && (counter >= sliderImgs.length - 3)) {
         nextBtn.disabled = true;
     }
     else {
