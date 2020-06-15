@@ -15,10 +15,11 @@ let size = sliderImgs[0].width + 4;
 prevBtn.disabled = true;
 
 nextBtn.addEventListener('click', () => {
+    prevBtn.disabled = false;
     slider.style.transition = 'transform 0.4s ease-in-out';
     counter++;
     slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    prevBtn.disabled = false;
+
 
     if (document.documentElement.clientWidth > 530 && (counter >= sliderImgs.length - 3)) {
         nextBtn.disabled = true;
@@ -33,6 +34,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
+    nextBtn.disabled = false;
     slider.style.transition = 'transform 0.4s ease-in-out';
     counter--;
     slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
