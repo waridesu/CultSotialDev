@@ -42,6 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 100%;
+    font-family: 'Mariupol-Regular', sans-serif;
 }
 
 main {
@@ -112,11 +113,11 @@ nav a {
     align-items: center;
     text-align: center;
     background-color: #03257e;
-    background-image: url("../img/blue.png");
+    background-image: url("../img/600.png"), url("../img/blue.png");
     height: calc(100vh - 80px);
-    background-position: center;
+    background-position:center 78%, center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 40%, cover;
     padding-top: 20vh;
     padding-bottom: 2vh;
     box-sizing: border-box;
@@ -176,7 +177,6 @@ nav a {
 
 .news-container li, .event li, .media-container li, .index-foundation li {
     width: 32%;
-    min-width: 420px;
 }
 
 .book-container li {
@@ -203,8 +203,8 @@ nav a {
 }
 
 .news-container img, .media-container img {
-    width: 100%;
-    min-width: 250px;
+    width: 300px;
+    flex-shrink: 0;
 }
 
 .news-container p {
@@ -260,6 +260,7 @@ nav a {
 .index-foundation h2, .index-media h2 {
     margin-top: 0;
     padding-top: 0.83em;
+    color: #03257e;
 }
 
 .index-foundation li, .index-media li {
@@ -351,7 +352,10 @@ footer {
 .foundation-main, .foundation-map {
     width: 50%;
 }
-
+.foundation-main h1 {
+    text-align: center;
+    font-family: 'Mariupol-Regular', sans-serif;
+}
 .fondation-list {
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +368,16 @@ footer {
 }
 
 .fondation-list div {
+    position: relative;
     padding: 0 10px;
+    padding-right: 45px;
+}
+.fondation-list .marker {
+    position: absolute;
+    top: 2%;
+    right: 1.5%;
+    width: 38px;
+    height: 35px;
 }
 
 .fondation-list p {
@@ -375,13 +388,26 @@ footer {
     display: block;
     width: 100%;
 }
-
+.foundation-map div {
+    height: 100%;
+}
+@media (max-width: 1500px) {
+    .news-container li {
+        width: 47%;
+    }
+}
 @media (max-width: 1060px) {
+    .news-container a {
+        display: block;
+    }
     header nav {
         padding: 0;
         background-color: #03257e;
     }
-
+    .index-intro {
+        background-position: center 90% , center;
+        background-size: 80%, cover;
+    }
     nav p {
         display: none;
         padding: 19.5px 20px;
@@ -476,6 +502,11 @@ footer {
 }
 
 @media (max-width: 530px) {
+    .index-intro {
+        background-position: center;
+        background-size: 95%, cover;
+    }
+
     .news-container a, .media-container a {
         flex-direction: column;
     }

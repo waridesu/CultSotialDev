@@ -8,7 +8,7 @@ let counter = 0;
 
 
 
-let size = sliderImgs[0].width + 4;
+let size = sliderImgs[0].offsetWidth;
 
 
 
