@@ -1,5 +1,3 @@
-
-
 const slider = document.querySelector('.slider');
 const sliderImgs = document.querySelectorAll('.slider img');
 
