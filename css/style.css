@@ -113,11 +113,11 @@ nav a {
     align-items: center;
     text-align: center;
     background-color: #03257e;
-    background-image: url("../img/600.png"), url("../img/blue.png");
+    background-image: url("../img/blue.png");
     height: calc(100vh - 80px);
-    background-position:center 78%, center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%, cover;
+    background-size: cover;
     padding-top: 20vh;
     padding-bottom: 2vh;
     box-sizing: border-box;
@@ -404,10 +404,6 @@ footer {
         padding: 0;
         background-color: #03257e;
     }
-    .index-intro {
-        background-position: center 90% , center;
-        background-size: 80%, cover;
-    }
     nav p {
         display: none;
         padding: 19.5px 20px;
@@ -502,11 +498,6 @@ footer {
 }
 
 @media (max-width: 530px) {
-    .index-intro {
-        background-position: center;
-        background-size: 95%, cover;
-    }
-
     .news-container a, .media-container a {
         flex-direction: column;
     }
