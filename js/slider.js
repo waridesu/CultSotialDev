@@ -7,10 +7,7 @@ const nextBtn = document.querySelector('.right')
 let counter = 0;
 
 
-
-let size = sliderImgs[0].offsetWidth;
-
-
+let size = document.querySelector('.slider img').width + 4;
 
 prevBtn.disabled = true;
 
@@ -41,4 +38,8 @@ prevBtn.addEventListener('click', () => {
     if (counter <= 0) {
         prevBtn.disabled = true;
     }
+});
+
+window.addEventListener('resize',()=>{
+    window.location.href = window.location.href;
 });
