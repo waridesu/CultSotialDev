@@ -41,5 +41,7 @@ prevBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize',()=>{
-    window.location.href = window.location.href;
+    setTimeout(function () {
+        location.reload()
+    }, 100);
 });
