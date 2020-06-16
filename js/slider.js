@@ -40,7 +40,7 @@ prevBtn.addEventListener('click', () => {
     }
 });
 
-window.addEventListener('onresize',()=>{
+window.addEventListener('resize',()=>{
     setTimeout(function () {
         location.reload()
     }, 100);
