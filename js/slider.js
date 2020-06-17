@@ -43,3 +43,9 @@ prevBtn.addEventListener('click', () => {
         slider.style.transform = 'translateX(' + (-100 * counter) + '%)';
     }
 });
+
+window.addEventListener("orientationchange", function() {
+    setTimeout(function(){
+        location.reload();
+    },500);
+  });
