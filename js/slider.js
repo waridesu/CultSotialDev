@@ -47,5 +47,5 @@ prevBtn.addEventListener('click', () => {
 window.addEventListener("orientationchange", function() {
     setTimeout(function(){
         location.reload();
-    },500);
+    },10);
   });
