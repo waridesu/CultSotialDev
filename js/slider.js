@@ -15,7 +15,7 @@ nextBtn.addEventListener('click', () => {
     prevBtn.disabled = false;
     slider.style.transition = 'transform 0.4s ease-in-out';
     counter++;
-    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    slider.style.transform = 'translateX(' + ((-100 / 3) * counter) + '%)';
 
 
     if (document.documentElement.clientWidth > 530 && (counter >= sliderImgs.length - 3)) {
@@ -34,12 +34,8 @@ prevBtn.addEventListener('click', () => {
     nextBtn.disabled = false;
     slider.style.transition = 'transform 0.4s ease-in-out';
     counter--;
-    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    slider.style.transform = 'translateX(' + ((-100 / 3) * counter) + '%)';
     if (counter <= 0) {
         prevBtn.disabled = true;
     }
-});
-
-window.addEventListener('resize',()=>{
-    window.location.href = window.location.href;
 });
