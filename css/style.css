@@ -86,20 +86,28 @@ nav a {
     width:calc(100% - 911px);
 
 }
-
-.search img {
+.search button {
     position: absolute;
     top: 25px;
-    left: 11px;
+    right: 11px;
     width: 30px;
     height: 30px;
+    border: none;
+    padding: 0;
+    background-image: url("../img/search.png");
+    background-position: center;
+    background-size: contain;
+    background-color: unset;
+}
+.search button img {
+    width: 30px;
 }
 
 .search input {
     width: 100%;
     height: 100%;
     border: none;
-    padding-left: 30px;
+    padding-right: 30px;
     box-sizing: border-box;
 }
 .search input::placeholder{
