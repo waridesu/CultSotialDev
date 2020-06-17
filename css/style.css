@@ -320,7 +320,7 @@ footer {
     left: 0;
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 350px;
     margin: 0;
     padding: 0;
 }
@@ -336,7 +336,6 @@ footer {
 
  .slider img {
     height: 100%;
-
     width: calc(33.33% - 4px);
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
@@ -517,6 +516,7 @@ footer {
     }
     .slider-conteiner .slider img {
         width: calc(100% - 4px);
+
     }
     .fondation-list li, .event li, .book-container li {
         width: 95%;
