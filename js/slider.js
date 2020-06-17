@@ -6,27 +6,13 @@ const nextBtn = document.querySelector('.right')
 
 let counter = 0;
 
-
-let size = document.querySelector('.slider img').width + 4;
-
 prevBtn.disabled = true;
 
 nextBtn.addEventListener('click', () => {
     prevBtn.disabled = false;
     slider.style.transition = 'transform 0.4s ease-in-out';
     counter++;
-    if(document.documentElement.clientWidth >530){
-        slider.style.transform = 'translateX(' + ((-100 / 3) * counter) + '%)';
-        if (counter >= sliderImgs.length - 3) {
-            nextBtn.disabled = true;
-        }
-    }
-    else {
-        slider.style.transform = 'translateX(' + (-100 * counter) + '%)';
-        if (counter >= sliderImgs.length - 1) {
-            nextBtn.disabled = true;
-        }
-    }
+    sliderMove();
 });
 
 prevBtn.addEventListener('click', () => {
@@ -36,16 +22,56 @@ prevBtn.addEventListener('click', () => {
     if (counter <= 0) {
         prevBtn.disabled = true;
     }
-    if(document.documentElement.clientWidth >530){
-        slider.style.transform = 'translateX(' + ((-100 / 3) * counter) + '%)';
-    }
-    else {
-        slider.style.transform = 'translateX(' + (-100 * counter) + '%)';
-    }
+    sliderMove();
 });
 
-window.addEventListener("orientationchange", function() {
-    setTimeout(function(){
-        location.reload();
-    },10);
-  });
+function sliderMove() {
+    if (window.innerWidth > 1700) {
+        slider.style.transform = 'translateX(' + ((-100 / 6) * counter) + '%)';
+        if (counter >= sliderImgs.length - 6) {
+            counter=0;
+        }
+    }
+    else if (window.innerWidth < 1700 && window.innerWidth > 1500) {
+        slider.style.transform = 'translateX(' + ((-100 / 5) * counter) + '%)';
+        if (counter >= sliderImgs.length - 5) {
+            counter=0;
+
+        }
+    }
+    else if (window.innerWidth < 1500 && window.innerWidth > 1060) {
+        slider.style.transform = 'translateX(' + ((-100 / 4) * counter) + '%)';
+        if (counter >= sliderImgs.length - 4) {
+            counter=0;
+
+        }
+    }
+    else if (window.innerWidth < 1060 && window.innerWidth > 800) {
+        slider.style.transform = 'translateX(' + ((-100 / 3) * counter) + '%)';
+        if (counter >= sliderImgs.length - 3) {
+            counter=0;
+
+        }
+    }
+    else if (window.innerWidth < 800 && window.innerWidth > 530) {
+        slider.style.transform = 'translateX(' + ((-100 / 2) * counter) + '%)';
+        if (counter >= sliderImgs.length - 2) {
+            counter=0;
+
+        }
+    }
+    else  {
+            slider.style.transform = 'translateX(' + ((-100) * counter) + '%)';
+            if (counter >= sliderImgs.length - 1) {
+                counter=0;
+            }
+        }
+    }
+
+    window.addEventListener("resize", function () {
+        sliderMove();
+        if (counter>=counter-1) {
+            counter=0;
+            prevBtn.disabled = true;
+        }
+    });

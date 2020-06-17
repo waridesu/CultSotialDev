@@ -28,9 +28,7 @@ header {
     width: 100%;
     height: 80px;
     background-color: #03257e;
-
 }
-
 
 .main-navigation {
     display: inline-block;
@@ -48,16 +46,19 @@ header {
 main {
     flex: 1 0 auto;
 }
+
 header nav {
     display: inline-block;
     vertical-align: top;
     margin: 0;
     padding: 20px 0;
 }
+
 .main-logo {
     margin: 5px 0;
     margin-left: 10px;
 }
+
 nav p {
     display: inline-block;
     vertical-align: middle;
@@ -65,7 +66,6 @@ nav p {
     margin: 0;
     padding: 0 5px;
 }
-
 
 nav a {
     font-family: 'Mariupol-Medium', sans-serif;
@@ -83,9 +83,9 @@ nav a {
     background-color: #03257e;
     padding: 20px 10px;
     height: 40px;
-    width:calc(100% - 911px);
-
+    width: calc(100% - 911px);
 }
+
 .search button {
     position: absolute;
     top: 25px;
@@ -99,6 +99,7 @@ nav a {
     background-size: contain;
     background-color: unset;
 }
+
 .search button img {
     width: 30px;
 }
@@ -110,8 +111,10 @@ nav a {
     padding-right: 30px;
     box-sizing: border-box;
 }
-.search input::placeholder{
-   font-family: 'Mariupol-Medium', sans-serif;;
+
+.search input::placeholder {
+    font-family: 'Mariupol-Medium', sans-serif;
+    ;
 }
 
 .index-intro {
@@ -132,11 +135,9 @@ nav a {
     color: #fff;
 }
 
-
 .index-intro h1 {
     margin: 0;
     font-family: 'Mariupol-Bold', sans-serif;
-
 }
 
 .index-intro button {
@@ -319,10 +320,12 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .slider-wrap {
     width: 100%;
     overflow: hidden;
 }
+
 .slider {
     position: relative;
     left: 0;
@@ -342,15 +345,11 @@ footer {
     margin: 0;
 }
 
- .slider img {
-    height: 100%;
-    width: calc(33.33% - 4px);
+.slider img {
+    width: calc(16.66% - 4px);
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
-    animation: slider 20s infinite;
 }
-
-
 
 .foundation-container {
     display: flex;
@@ -359,10 +358,12 @@ footer {
 .foundation-main, .foundation-map {
     width: 50%;
 }
+
 .foundation-main h1 {
     text-align: center;
     font-family: 'Mariupol-Regular', sans-serif;
 }
+
 .fondation-list {
     display: flex;
     flex-wrap: wrap;
@@ -379,6 +380,7 @@ footer {
     padding: 0 10px;
     padding-right: 45px;
 }
+
 .fondation-list .marker {
     position: absolute;
     top: 2%;
@@ -395,17 +397,32 @@ footer {
     display: block;
     width: 100%;
 }
+
 .foundation-map div {
     height: 100%;
 }
+
+@media (max-width: 1700px) {
+    .slider img {
+        width: calc(20% - 4px);
+    }
+}
+
 @media (max-width: 1500px) {
     .news-container li {
         width: 47%;
     }
+    .slider img {
+        width: calc(25% - 4px);
+    }
 }
+
 @media (max-width: 1060px) {
     .news-container a {
         display: block;
+    }
+    .slider img {
+        width: calc(33.33% - 4px);
     }
     header nav {
         padding: 0;
@@ -417,7 +434,6 @@ footer {
     }
     nav p:first-child {
         display: block;
-
         background-color: #03257e;
     }
     nav.active {
@@ -431,11 +447,9 @@ footer {
         padding: 20px;
         flex-grow: 0;
     }
-
     .search {
         width: calc(100% - 381px);
     }
-
     .burger {
         position: relative;
         top: 20px;
@@ -503,7 +517,11 @@ footer {
         display: none;
     }
 }
-
+@media (max-width: 800px) {
+    .slider img {
+        width: calc(50% - 4px);
+    }
+}
 @media (max-width: 530px) {
     .news-container a, .media-container a {
         flex-direction: column;
@@ -522,9 +540,8 @@ footer {
     .slider {
         height: 350px;
     }
-    .slider-conteiner .slider img {
+    .slider img {
         width: calc(100% - 4px);
-
     }
     .fondation-list li, .event li, .book-container li {
         width: 95%;
