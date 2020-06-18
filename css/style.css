@@ -114,9 +114,9 @@ nav a {
 }
 
 .search input::placeholder {
+    margin: auto;
     font-size: medium;
     font-family: 'Mariupol-Medium', sans-serif;
-    ;
 }
 
 .index-intro {
