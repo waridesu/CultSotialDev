@@ -113,6 +113,7 @@ nav a {
     box-sizing: border-box;
     font-family: 'Mariupol-Medium', sans-serif;
     font-size: medium;
+    line-height: 2.25;
 }
 
 .index-intro {
