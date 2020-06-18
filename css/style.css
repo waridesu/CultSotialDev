@@ -111,12 +111,8 @@ nav a {
     padding-left: 5px;
     padding-right: 30px;
     box-sizing: border-box;
-}
-
-.search input::placeholder {
-    margin: auto;
-    font-size: medium;
     font-family: 'Mariupol-Medium', sans-serif;
+    font-size: medium;
 }
 
 .index-intro {
