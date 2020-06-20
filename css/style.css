@@ -459,11 +459,20 @@ li:nth-child(3n) .v-bg-image {
 }
 .description,
 .v-description {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
     flex-grow: 1;
     box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.75);
     padding: 5px;
     font-weight: 600;
 }
+
+.description p,
+.v-description p {
+    margin: auto 0;
+}
+
 .v-description {
     position: relative;
     flex-grow: 1;
