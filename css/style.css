@@ -432,7 +432,7 @@ footer {
 
 .bg-image,
 .v-bg-image {
-   
+    min-height: 180px;
     background-color: #00cfb4;
     background-image: url("../img/536x354.jpg");
     background-size: cover;
