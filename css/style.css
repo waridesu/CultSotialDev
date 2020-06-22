@@ -475,6 +475,7 @@ li:nth-child(3n) .v-bg-image {
 
 .v-description {
     position: relative;
+    padding: 5px 2px;
 }
 .marked {
     display: flex;
@@ -505,6 +506,7 @@ li:nth-child(3n) .v-bg-image {
     bottom: -5px;
     background-color: #00cfb4;
     padding: 2px;
+    font-size: 13px;
 }
 @media (max-width: 1700px) {
     .slider img {
