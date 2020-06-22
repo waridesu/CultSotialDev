@@ -475,7 +475,8 @@ li:nth-child(3n) .v-bg-image {
 
 .v-description {
     position: relative;
-    padding: 5px 2px;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 .marked {
     display: flex;
