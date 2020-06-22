@@ -597,10 +597,10 @@ li:nth-child(3n) .v-bg-image {
         transform: scale(0);
     }
     .burger.active:before {
-        transform: translate( 0, 12px) rotate(-45deg);
+        transform: translate( 0, 12.5px) rotate(-45deg);
     }
     .burger.active:after {
-        transform: translate( 0, -12px) rotate(45deg);
+        transform: translate( 0, -12.5px) rotate(45deg);
     }
     .main-navigation {
         flex-direction: column;
